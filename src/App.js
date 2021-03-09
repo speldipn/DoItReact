@@ -1,10 +1,10 @@
 import React from "react";
-import Test from "./Test";
+import Arrow from "./Arrow";
 
 function App() {
   return (
     <div>
-      <Test />
+      <Arrow />
     </div>
   );
 }
