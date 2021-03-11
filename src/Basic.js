@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./Test.css";
+import "./Basic.css";
 
 // Hot reloading
 

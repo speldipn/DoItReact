@@ -7,7 +7,7 @@ class Arrow extends Component {
   }
   componentDidMount() {
     console.log("componentDidMount called");
-    this.listFunc();
+    this.test2();
   }
 
   test = () => {
@@ -103,6 +103,18 @@ class Arrow extends Component {
     console.log(key1);
     console.log(key2);
     console.log(key3);
+  };
+
+  test2 = () => {
+    const samples = "banana=10&apple=20&orange=30";
+    const tokens = samples.split("&");
+    /*
+    tokens.forEach((item) => {
+      console.log(item.split("=")[0], item.split("=")[1]);
+    });
+    */
+    const titles = tokens.map((item) => item.split("=")[0]);
+    titles.forEach((title) => console.log(title));
   };
 
   render() {
