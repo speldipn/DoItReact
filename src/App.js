@@ -1,10 +1,10 @@
 import React from "react";
-import Libs from "./Libs";
+import Timeout from "./Timeout";
 
 function App() {
   return (
     <div>
-      <Libs />
+      <Timeout />
     </div>
   );
 }
