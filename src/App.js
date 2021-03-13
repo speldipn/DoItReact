@@ -1,10 +1,10 @@
 import React from "react";
-import Timeout from "./Timeout";
+import Throttle from "./Throttle";
 
 function App() {
   return (
     <div>
-      <Timeout />
+      <Throttle />
     </div>
   );
 }
