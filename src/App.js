@@ -1,10 +1,17 @@
 import React from "react";
-import Throttle from "./Throttle";
+import ChildComponent from "./ChildComponent";
 
 function App() {
   return (
     <div>
-      <Throttle />
+      <ChildComponent
+        /*objValue={{ name: "Neo", age: 34 }} */
+        objValue={{ age: 34 }}
+        requiredStringValue="Monster"
+      >
+        <p>Neo</p>
+        <p>34</p>
+      </ChildComponent>
     </div>
   );
 }
