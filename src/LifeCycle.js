@@ -12,8 +12,9 @@ class LifeCycle extends React.Component {
     this.onClickButton = this.onClickButton.bind(this);
   }
 
-  getDerivedStateFromProp() {
-    console.log("getDerivedStateFromProp()");
+  getDerivedStateFromProp(props, state) {
+    // this function is static function, you must use parameters such as props, state
+    console.log("getDerivedStateFromProp()", props, state);
   }
 
   componentDidMount() {
