@@ -19,8 +19,7 @@ class LifeCycle extends React.Component {
 
   componentDidMount() {
     console.log("componentDidMount()");
-    // this.forceUpdate();
-    // render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+    this.forceUpdate();
   }
 
   shouldComponentUpdate() {
@@ -41,10 +40,6 @@ class LifeCycle extends React.Component {
     console.log("componentWillUpdate");
   }
   */
-
-  componentWillUnmount() {
-    console.log("componentWillUnmount");
-  }
 
   onClickButton() {
     this.setState({ count: this.state.count + 1 });
