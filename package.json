@@ -20,7 +20,8 @@
     "redux-pack": "^0.1.5",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "selector-action": "^1.1.1"
+    "selector-action": "^1.1.1",
+    "shallow-equal": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,7 +32,11 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [">0.2%", "not dead", "not op_mini all"],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "@babel/core": "7.5.5",
     "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
