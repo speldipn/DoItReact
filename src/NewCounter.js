@@ -5,26 +5,33 @@ class NewCounter extends React.Component {
     super(props);
     this.state = {};
     this.increaseCount = this.increaseCount.bind(this);
+    console.log("NewCounter", "constructor");
   }
 
   static getDerivedStateFromProps(props, state) {
-    const { count } = props;
+    console.log("NewCounter", "getDerivedStateFromProps");
+    const { start } = props;
     return {
-      count,
-      newCount: count === state.count ? state.newCount : count,
+      start,
+      count: start === state.start ? state.count : start,
     };
   }
 
   increaseCount() {
-    this.setState(({ newCount }) => ({
-      newCount: newCount + 1,
+    this.setState(({ count }) => ({
+      count: count + 1,
     }));
   }
 
+  componentDidUpdate() {
+    console.log("NewCounter", "componentDidUpdate");
+  }
+
   render() {
+    console.log("NewCounter", "render");
     return (
       <div>
-        <h1>NewCounter: {this.state.newCount}</h1>
+        <h1>NewCounter: {this.state.count}</h1>
         <button onClick={this.increaseCount}>Click</button>
       </div>
     );

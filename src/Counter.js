@@ -4,9 +4,10 @@ class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: this.props.count || 0,
+      count: this.props.start || 0,
     };
     this.onClickButton = this.onClickButton.bind(this);
+    console.log("Counter", "constructor");
   }
 
   onClickButton() {
@@ -14,7 +15,12 @@ class Counter extends React.Component {
     this.setState({ count: count + 1 });
   }
 
+  componentDidUpdate() {
+    console.log("Counter", "componentDidUpdate");
+  }
+
   render() {
+    console.log("Counter", "render");
     const { count } = this.state;
     return (
       <div>
